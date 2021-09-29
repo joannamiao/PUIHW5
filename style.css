@@ -1,0 +1,97 @@
+
+.topnav {
+  background-color: #F3B74C;
+  /* grid-template-columns: auto auto auto auto auto auto auto; */
+}
+
+.topnav a {
+  float: right;
+  font-family : 'Avenir';
+  color: black;
+  text-align: center;
+  padding: 25px 50px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #fad088;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #F3B74C;
+  color: white;
+}
+
+#sectionTitle{
+  font-weight: lighter;
+  text-align: left;
+  font-family : 'Avenir';
+}
+
+#cartImg{
+  max-width: 10%;
+}
+
+#logoImg{
+  max-width: 15%;
+  padding: 10px 10px;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+grid-gap: 10px;
+position: relative;
+padding: 10px;
+text-align: center;  
+
+}
+
+.grid-item{
+    grid-column: 1;
+  }
+
+.picture-gallery{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align:center;
+  margin:50px auto; 
+}
+
+#galleryImg{
+  max-width: 70%;
+}
+
+.imgHolder {
+  position: relative;
+  display:table;
+}
+
+.caption{
+  background-color: #FBB2AF;
+  display:table-caption;
+  caption-side:bottom;
+  margin:0 38px ; 
+  font-size: 25px;
+  font-family : 'Avenir';
+}
+
+.review{
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align:center;
+  margin:60px auto; 
+  padding: 20px 70px ;
+  background-color: #FFE9C2;
+  font-family : 'Avenir';
+}
+
+#box{
+  margin:60px auto; 
+  padding: 20px 70px ;
+  background-color: #FFE9C2;
+}
+
+
