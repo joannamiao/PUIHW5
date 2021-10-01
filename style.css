@@ -1,7 +1,11 @@
 
 .topnav {
   background-color: #F3B74C;
-  /* grid-template-columns: auto auto auto auto auto auto auto; */
+}
+
+.topnav-right {
+  float: right;
+  background-color: #F3B74C;
 }
 
 .topnav a {
@@ -9,7 +13,8 @@
   font-family : 'Avenir';
   color: black;
   text-align: center;
-  padding: 25px 50px;
+  padding: 20px 70px;
+  max-width:50%;
   text-decoration: none;
   font-size: 17px;
 }
@@ -31,12 +36,21 @@
 }
 
 #cartImg{
-  max-width: 10%;
+  max-width:50%;
+  height:auto;
+  margin-right:-400px;
+
 }
 
 #logoImg{
-  max-width: 15%;
+  max-width: 7%;
   padding: 10px 10px;
+}
+
+.logoHolder {
+  /* position: relative; */
+  display:flex;
+  padding-left:10px;
 }
 
 .grid-container {
@@ -74,8 +88,22 @@ text-align: center;
   display:table-caption;
   caption-side:bottom;
   margin:0 38px ; 
-  font-size: 25px;
+  font-size: 20px;
   font-family : 'Avenir';
+}
+
+#exploreButton{
+  background-color: #FFAC18;
+  border: none;
+  color: black;
+  padding: 20px 400px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 .review{
@@ -92,6 +120,10 @@ text-align: center;
   margin:60px auto; 
   padding: 20px 70px ;
   background-color: #FFE9C2;
+}
+
+#reviewerName{
+  text-align: left;
 }
 
 
