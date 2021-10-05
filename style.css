@@ -1,6 +1,8 @@
 
 .topnav {
+  position: fixed; 
   background-color: #F3B74C;
+  z-index: 2;
 }
 
 .topnav-right {
@@ -13,7 +15,7 @@
   font-family : 'Avenir';
   color: black;
   text-align: center;
-  padding: 20px 70px;
+  padding: 30px 100px;
   max-width:50%;
   text-decoration: none;
   font-size: 17px;
@@ -36,43 +38,67 @@
 }
 
 #cartImg{
-  max-width:50%;
+  max-width:40%;
   height:auto;
   margin-right:-400px;
+  margin-top:10px;
 
 }
 
 #logoImg{
-  max-width: 7%;
-  padding: 10px 10px;
+  max-width: 30%;
+  padding: 3px -10px;
+}
+
+#storeName{
+  font-family : 'Avenir';
+  margin-top:25px;
 }
 
 .logoHolder {
-  /* position: relative; */
   display:flex;
   padding-left:10px;
+  margin-top:10px;
 }
 
+.logoHolder  a {
+  float: left;
+  padding: 10px 10px;
+}
+
+.logoHolder a:hover {
+  background-color: #F3B74C;
+}
+
+.logoHolder a.active {
+  background-color: #F3B74C;
+}
+
+
 .grid-container {
-display: grid;
-grid-template-columns: auto auto auto auto;
 grid-gap: 10px;
 position: relative;
 padding: 10px;
-text-align: center;  
+text-align: center; 
+z-index:0;
+}
 
+.grid-container1{
+  z-index:-1;
 }
 
 .grid-item{
     grid-column: 1;
+    /* z-index:-1; */
   }
 
 .picture-gallery{
   display: grid;
   grid-template-columns: auto auto auto auto;
   text-align:center;
-  margin:50px auto; 
+  margin:50px 20px; 
 }
+
 
 #galleryImg{
   max-width: 70%;
@@ -81,13 +107,14 @@ text-align: center;
 .imgHolder {
   position: relative;
   display:table;
+  /* z-index:3; */
 }
 
 .caption{
   background-color: #FBB2AF;
   display:table-caption;
   caption-side:bottom;
-  margin:0 38px ; 
+  margin:0px 20px 35px ; 
   font-size: 20px;
   font-family : 'Avenir';
 }
@@ -127,3 +154,101 @@ text-align: center;
 }
 
 
+.overlay {
+  position: fixed; 
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  cursor: pointer; 
+  z-index: 0; 
+}
+
+#productDetail{
+  background-color:white;
+  z-index:1;
+  margin: 10% ; 
+  text-align:left;
+  padding: 10px;
+  border: 1px solid #888;
+  position: fixed;
+  width:50%;
+  height: 60%;
+  left:25%;
+  top:25%;
+  display: block;
+  margin: 0 auto;
+  background-image:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('img/roll1.jpg');
+  background-position: center;
+  background-size: 100%;
+  
+}
+
+#popUpTitle{
+  text-align:center;
+  font-family : 'Avenir';
+  font-size:30px;
+  color:white;
+}
+
+/* https://www.w3schools.com/howto/howto_js_accordion.asp */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 0px;
+  margin-top:-20px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+#label{
+  font-family : 'Avenir';
+}
+
+#select{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  grid-template-columns: auto auto;
+  color:white;
+  font-weight: 500;
+}
+
+.amountButton{
+  background-color:transparent;
+  border: none;
+  color:white;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+#amount{
+  margin-left:30%;
+}
+
+.addToCart{
+  background-color: #FFD488;
+  border: none;
+  padding: 25px 60px;
+  text-align: center;
+  left:50%;
+  font-size: 20px;
+  border-radius: 50px;
+  margin: auto 33%;
+}
