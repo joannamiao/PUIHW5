@@ -31,10 +31,11 @@
   color: white;
 }
 
-#sectionTitle{
+.sectionTitle{
   font-weight: lighter;
   text-align: left;
   font-family : 'Avenir';
+  margin-top:8%;
 }
 
 #cartImg{
@@ -46,8 +47,7 @@
 }
 
 #logoImg{
-  max-width: 30%;
-  padding: 3px -10px;
+  max-width: 25%;
 }
 
 #storeName{
@@ -89,7 +89,6 @@ z-index:0;
 
 .grid-item{
     grid-column: 1;
-    /* z-index:-1; */
   }
 
 .picture-gallery{
@@ -100,14 +99,13 @@ z-index:0;
 }
 
 
-#galleryImg{
+.galleryImg{
   max-width: 70%;
 }
 
 .imgHolder {
   position: relative;
   display:table;
-  /* z-index:3; */
 }
 
 .caption{
@@ -143,14 +141,16 @@ z-index:0;
   font-family : 'Avenir';
 }
 
-#box{
+.box{
   margin:60px auto; 
   padding: 20px 70px ;
   background-color: #FFE9C2;
 }
 
-#reviewerName{
+.reviewerName{
   text-align: left;
+  font-size:30px;
+  font-weight: 100;
 }
 
 
@@ -186,7 +186,7 @@ z-index:0;
   
 }
 
-#popUpTitle{
+.popUpTitle{
   text-align:center;
   font-family : 'Avenir';
   font-size:30px;
@@ -218,7 +218,7 @@ z-index:0;
   overflow: hidden;
 }
 
-#label{
+.label1{
   font-family : 'Avenir';
 }
 
