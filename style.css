@@ -3,11 +3,13 @@
   position: fixed; 
   background-color: #F3B74C;
   z-index: 2;
+  width: 100%;
 }
 
 .topnav-right {
   float: right;
   background-color: #F3B74C;
+  padding-right: 20px;
 }
 
 .topnav a {
@@ -15,10 +17,11 @@
   font-family : 'Avenir';
   color: black;
   text-align: center;
-  padding: 30px 100px;
-  max-width:50%;
+  padding: 25px 20px;
+  margin: 10px 5px;
+  max-width:30%;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .topnav a:hover {
@@ -38,21 +41,46 @@
   margin-top:8%;
 }
 
-#cartImg{
-  max-width:40%;
-  height:auto;
-  margin-right:-400px;
-  margin-top:10px;
+#cartWithCount{
+  position: relative;
+}
 
+#orderCount{
+  position: absolute;
+  bottom: 0; right: 0; width: 200%; text-align:right;
+}
+
+#cartImg{
+  max-width:10%;
+  left:-200%;
+  margin-left:10%;
+}
+
+#updatedCartImg{
+  max-width:50%;
+  margin-left:10%;
+  position: absolute; 
+  top: 10; right: 0; width: 200%; text-align:right;
+}
+
+.selectedCart{
+  background-color: white;
+  padding:10px;
+  border-radius: 18px;
+  
+}
+
+.selectedCart a.hover {
+  background-color:#F3B74C;
 }
 
 #logoImg{
-  max-width: 25%;
+  max-width: 30%;
 }
 
 #storeName{
   font-family : 'Avenir';
-  margin-top:25px;
+  margin-top:30px;
 }
 
 .logoHolder {
@@ -251,4 +279,83 @@ z-index:0;
   font-size: 20px;
   border-radius: 50px;
   margin: auto 33%;
+}
+
+
+#cartList{
+  background-color:white;
+  z-index:1;
+  margin: 10% ; 
+  text-align:left;
+  padding: 6px;
+  border: 1px solid #888;
+  position: fixed;
+  width:35%;
+  height: 100vh;
+  left:65%;
+  top:12%;
+  display: block;
+  margin: 0 auto;
+  background-position: center;
+  background-size: 100%;  
+}
+
+#cartTitle{
+  font-family:'Avenir';
+  text-align: center;
+  background:#FFE5B8;
+  margin-left: -1.5%;
+  margin-top:-2%;
+  padding-top: 3%;
+}
+
+#cartTitle #titleName{
+  padding-bottom:3%;
+}
+
+#close{
+ float:left;
+ padding-left:1%;
+}
+
+.order{
+  /* grid-template-columns: auto auto auto; */
+  display: table;
+}
+
+.placeOrder{
+  background-color: #FFD488;
+  border: none;
+  padding: 10px 80px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50px;
+  margin-left: 30%;
+}
+
+.order{
+  margin-right:15%;
+}
+
+.cartImg{
+  width:30%;
+  margin-left:5%;
+  float:left;
+  display: table-cell;
+}
+
+.orderItemInfo{
+  text-align:left;
+  font-family:'Avenir';
+  margin-left:40%;
+  margin-right:-20%;
+}
+
+.glazingTitle{
+  font-weight: lighter;
+}
+
+.rollCount{
+  font-family:'Avenir';
+  display: table-cell; 
 }
